@@ -1,5 +1,5 @@
-FROM python:3.7.4-buster
-LABEL version "m4.7.10-p3.7.4"
+FROM ubuntu:18.04
+LABEL version "4.7.10"
 LABEL description "Miniconda inside python docker."
 
 ENV MINICONDA_VERSION Miniconda3-4.7.10
