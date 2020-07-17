@@ -1,11 +1,11 @@
-FROM ubuntu:18.04
-LABEL version "4.7.10"
+FROM nvidia/cuda:10.2-devel-ubuntu18.04
+LABEL version "4.8.3-c10.2"
 LABEL description "Miniconda inside python docker."
 
-ENV MINICONDA_VERSION Miniconda3-4.7.10
+ENV MINICONDA_VERSION Miniconda3-py37_4.8.3
 
 ENV MINICONDA_INSTALLER ${MINICONDA_VERSION}-Linux-x86_64.sh
-ENV MINICONDA_MD5_HASH 1c945f2b3335c7b2b15130b1b2dc5cf4
+ENV MINICONDA_MD5_HASH 751786b92c00b1aeae3f017b781018df
 
 ENV APT_PACKAGES wget curl apt-transport-https ca-certificates build-essential
 
